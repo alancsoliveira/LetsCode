@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="page">
+    <div class="card">
+      <h1>Fale com um membro da nossa equipe de vendas</h1>
+      <p>
+        Ajudaremos você a encontrar os produtos e os preços certos para o seu negócio.
+      </p>
+
+      <button>
+        Entrar em contato com Vendas
+      </button>
+
+    </div>
+    <div class="modal">
+      <header>
+        <h2>Entrar em contato com Vendas</h2>
+        <p>
+          Vamos começar a conversa. Conte-nos um pouco sobre você, e entraremos em <br> contato assim que possível.
+        </p>
+      </header>
+      <form action="">
+
+        <div class="nome_email">
+          <label class="field-label" for="nome">Nome Completo</label>
+          <input type="text" class="nome" id="nome" name="nome">
+
+          <label class="field-label" for="mail">Seu Email</label>
+          <input type="email" class="mail" id="mail" name="nome">
+        </div>
+
+        <div class="pronome">
+          <label for="pronome">Como gostaria de ser chamado?</label>
+          <input type="radio" name="pronome" id="pronome">Senhor
+          <input type="radio" name="pronome" id="pronome">Senhora
+        </div>
+
+        <div class="questao">
+          <label for="mensagem">Escreva sua Mensagem</label>
+          <textarea class="mensagem" name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        </div>
+
+        <button class="submit" type="submit">Entrar em contato</button>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

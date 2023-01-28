@@ -1,0 +1,57 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 6.25%;
+
+  --bd-input: rgba(73, 80, 87, 0.3);
+  --bg-input: #DCE2E9;
+}
+
+body{
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  font-size: 16rem;
+}
+
+.container{
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+button{
+  margin-top: 20rem;
+  width: 100%;
+  border: 1px solid var(--bd-input);
+  background-color: var(--bg-input);
+  padding: 16rem;
+  border-radius: 4rem;
+
+  font-weight: 700;
+  font-size: 15rem;
+  line-height: 20rem;
+
+  transition: 100ms;
+}
+
+button:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}

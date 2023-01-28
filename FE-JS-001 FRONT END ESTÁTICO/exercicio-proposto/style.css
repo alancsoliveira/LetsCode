@@ -1,0 +1,79 @@
+.page{
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid red;
+  width: 300px;
+  height: 400px;
+  padding: 50px;
+}
+
+.modal {
+  margin-top: 10px;
+  border: 1px solid red;
+  
+  width: 600px;
+  height: 500px;
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #03363d;
+}
+
+p {
+  color: #17494d;
+}
+
+label {
+  color: #03363d;
+  margin-bottom: 4px;
+}
+
+.nome_email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pronome {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #17494d;;
+}
+
+.questao {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+button {
+  margin-top: 30px;
+  background-color: #17494d;
+  border: 2px solid #17494d;
+
+  font-weight: bold;
+  color: #fff;
+
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}

@@ -1,0 +1,95 @@
+body{
+  background: #CDCDCD;
+}
+
+.page{
+  background: white;
+  width: 1000px;
+  height: 1000px;
+  margin: 20px auto;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo{
+  width: 250px;
+  height: 250px;
+  margin: 64px 330px 32px 330px;
+  border-radius: 180px;
+
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  color: #3F3D56;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+h1 span {
+  color: #EE24FF;
+  font-weight: bold;
+}
+
+p {
+  color: #828282;
+  font-family: 'Open Sans', sans-serif;
+
+  text-align: center;
+  font-size: 15px;
+}
+
+p+p{
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+p span {
+  color: #828282;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.line{
+  border-top: 1px solid #ECEFF2;
+  width: 390px;
+}
+
+footer nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  gap: 42px;
+
+
+  color: #3F3D56;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.wave{
+width: 1000px;
+}
