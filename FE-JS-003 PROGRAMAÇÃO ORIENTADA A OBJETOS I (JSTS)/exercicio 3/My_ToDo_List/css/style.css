@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica";
+  /* border: 1px solid red; */
+}
+
+:root {
+  font-size: 6.25%;
+
+  --hue: 250;
+  --bg-primary: hsl(var(--hue), 22%, 20%);
+}
+
+body {
+  background-color: var(--bg-primary);
+  font-size: 16rem;
+}
+
+button {
+  background-color: #fff;
+  color: #102f5e;
+  border: 2px solid #102f5e;
+  padding: 5rem 10rem;
+  font-size: 16rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 400ms;
+}
+
+button i {
+  color: #102f5e;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+button:hover {
+  background-color: #102f5e;
+  color: #fff;
+}
+button:hover > i {
+  color: #fff;
+}
+
+input,
+select {
+  padding: 4rem 8rem;
+}
+
+.hide {
+  display: none;
+}
+
+.todo-container {
+  max-width: 450px;
+  margin: 48rem auto;
+  background-color: #fdfdfd;
+  padding: 24rem;
+  border-radius: 15rem;
+}
+
+.todo-container header {
+  text-align: center;
+  padding: 0 16rem 16rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-form,
+#edit-form {
+  padding: 16rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-form p,
+#edit-form p {
+  margin-bottom: 8rem;
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-control input {
+  margin-right: 5rem;
+}
+
+#cancel-edit-btn {
+  margin-top: 16rem;
+}
+
+#toolbar {
+  padding: 16rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+#toolbar h4 {
+  margin-bottom: 8rem;
+}
+
+#search {
+  border-right: 1px solid #ddd;
+  padding-right: 16rem;
+  margin-right: 16rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search form {
+  display: flex;
+}
+
+#search input {
+  width: 100%;
+  margin-right: 5rem;
+}
+
+#filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter select {
+  flex: 1;
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16rem;
+  border-bottom: 1px solid #ddd;
+  transition: 300ms;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: 16rem;
+}
+
+.todo button {
+  margin-left: 8rem;
+}
+
+.done {
+  background-color: #395169;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation: completed 0.5s 1s forwards; */
+}
+
+.done h3 {
+  text-decoration: line-through;
+}
+
+@keyframes completed {
+  0% {
+    transform: translateX(-25px);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateX(425px);
+    visibility: hidden;
+    opacity: 0;
+    /* transform: translateY(0.1); */
+  }
+}
+
+
