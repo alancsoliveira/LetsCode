@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My ToDo List</title>
+  </head>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <body>
+    <header>
+      <h1>My ToDo List</h1>
+    </header>
+    <div class="todo-container">
+      <form class="todo-form">
+        <p>Adicionar nova tarefa:</p>
+        <div class="form-control">
+          <input
+            required
+            class="todo-input-title"
+            placeholder="Nome da Tarefa"
+            type="text"
+          />
+          <input
+            required
+            class="todo-date"
+            type="date" 
+            class="date"
+            name=""
+            id=""
+            pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+          />
+          <select required class="todo-option-priority">
+            <option value="Baixa">Baixa</option>
+            <option value="Média">Média</option>
+            <option value="Alta">Alta</option>
+          </select>
+          <button type="submit" class="add-todo">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </form>
+
+      <form class="edit-form hide">
+        <p>Edite sua tarefa:</p>
+        <div class="edit-control">
+          <input placeholder="Nome da Tarefa" type="text" />
+
+          <button class="add-todo">+</button>
+        </div>
+      </form>
+
+      <div class="todo_list">
+        <ul>
+          <!-- <li class="todo">
+            <p>Assistir The Last Of Us</p>
+            <span>Alta</span>
+            <span>06/02/2022</span>
+            <div class="button_wrapper">
+              <button class="done"><i class="fa-sharp fa-solid fa-check"></i></button>
+              <button class="edit"><i class="fa-solid fa-pen"></i></button>
+              <button class="remove-todo"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+          </li> -->
+          <li class="todo" id="1">
+            <p>Assistir The Last Of Us</p>
+            <div class="button_wrapper">
+              <span>2023-02-08</span><span>Prioridade: Baixa</span>
+              <button class="done">
+                <i class="fa-sharp fa-solid fa-check"></i>
+              </button>
+              <button class="edit">
+                <i class="fa-solid fa-pen"></i>
+              </button>
+              <button class="remove-todo">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

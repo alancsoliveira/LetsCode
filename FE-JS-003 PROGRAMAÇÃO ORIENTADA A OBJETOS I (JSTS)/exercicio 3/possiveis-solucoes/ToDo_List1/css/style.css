@@ -16,35 +16,6 @@
 body {
   background-color: var(--bg-primary);
   font-size: 16rem;
-  display: grid;
-  place-content: center;
-  height: 100vh;
-}
-
-body::before {
-  content: "";
-  width: 100%;
-  height: 50%;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: #121214;
-}
-
-header {
-  text-align: center;
-  color: #fff;
-  /* margin: 30rem 0 30rem 0; */
-  margin-bottom: 30rem;
-}
-
-.todo-container {
-  max-width: 450px;
-  background-color: #fdfdfd;
-  padding: 24rem;
-  border-radius: 15rem;
 }
 
 button {
@@ -57,7 +28,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 100ms;
+  transition: 400ms;
 }
 
 button i {
@@ -81,6 +52,21 @@ select {
 
 .hide {
   display: none;
+}
+
+.todo-container {
+  max-width: 450px;
+  margin: 48rem auto;
+  background-color: #fdfdfd;
+  padding: 24rem;
+  border-radius: 15rem;
+  box-shadow: 2rem 2rem 2rem #395169;
+}
+
+.todo-container header {
+  text-align: center;
+  padding: 0 16rem 16rem;
+  border-bottom: 1px solid #ccc;
 }
 
 #todo-form,
@@ -107,6 +93,45 @@ select {
   margin-top: 16rem;
 }
 
+#toolbar {
+  padding: 16rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+#toolbar h4 {
+  margin-bottom: 8rem;
+}
+
+#search {
+  border-right: 1px solid #ddd;
+  padding-right: 16rem;
+  margin-right: 16rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search form {
+  display: flex;
+}
+
+#search input {
+  width: 100%;
+  margin-right: 5rem;
+}
+
+#filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter select {
+  flex: 1;
+}
+
 .todo {
   display: flex;
   flex-direction: row;
@@ -114,7 +139,7 @@ select {
   align-items: center;
   padding: 16rem;
   border-bottom: 1px solid #ddd;
-  transition: 100ms;
+  transition: 300ms;
 }
 
 .todo h3 {
@@ -153,3 +178,5 @@ select {
     /* transform: translateY(0.1); */
   }
 }
+
+
